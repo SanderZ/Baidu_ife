@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<style>
+body{
+	padding: 0;
+	margin: 0;
+}
+.container{
+	overflow: hidden;
+	width: 400px;
+	height: 200px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin:-100px 0 0 -200px;
+	/*
+	适用于长宽不确定的情况，IE10以下不兼容
+	transform: translate(-50%, -50%);
+	*/
+	background-color: #ccc;
+}
+.circle{
+	width: 100px;
+	height: 100px;
+	background-color: #fc0;
+	border-radius: 50%;
+}
+#left_circle{
+	position: relative;
+	/*
+	相对于容器 container 的左上角进行绝对定位
+	position: absolute;
+	*/
+	left: -50px;
+	top: -50px;
+}
+#right_circle{
+	/*相对定位，相对于在原先的文档流中的位置定位（偏移）*/
+	position: relative;
+	left: 350px;
+	top: 50px;
+	/*
+	相对于容器 container 的左上角进行绝对定位
+	position: absolute;
+    left: 350px;
+    top: 150px;
+    */
+}
+</style>
+<head>
+	<meta charset="UTF-8">
+	<title>任务四</title>
+</head>
+<body>
+	<div class="container">
+		<div class="circle" id="left_circle"></div>
+		<div class="circle" id="right_circle"></div>
+	</div>
+</body>
+</html>
