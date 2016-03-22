@@ -117,15 +117,21 @@ aside form table{
 	border-collapse: collapse;
 	width: 100%;
 	font-size: 12px;
-	line-height: 3em;
+	line-height: 2em;
 }
 aside form table .col_1{
 	text-align: right;
+	vertical-align: top;
 	width: 30%;
 }
 aside form table .col_2{
 	text-align: left;
+	vertical-align: top;
 	width: 70%;
+}
+aside form table .tips{
+	color: #dedede;
+	padding-bottom: 1em;
 }
 aside #submitBtn{
 	border-radius: 10px;
@@ -276,17 +282,17 @@ footer{
 			<tr>
 				<td>表内容单元格</td>
 				<td>表内容单元格</td>
-				<td>操作</td>
+				<td><a href="">操作</a></td>
 			</tr>
 			<tr>
 				<td>表内容单元格</td>
 				<td>表内容单元格</td>
-				<td>操作</td>
+				<td><a href="">操作</a></td>
 			</tr>
 			<tr>
 				<td>表内容单元格</td>
 				<td>表内容单元格</td>
-				<td>操作</td>
+				<td><a href="">操作</a></td>
 			</tr>
 			<tr class="rowSum">
 				<td>总计</td>
@@ -306,7 +312,7 @@ footer{
 					</tr>
 					<tr>
 						<td class="col_1"></td>
-						<td class="col_2"><label for="mailAddr">邮箱地址请按要求格式输入</label></td>
+						<td class="col_2 tips"><label for="mailAddr">邮箱地址请按要求格式输入</label></td>
 					</tr>
 					<!--密码-->
 					<tr>
@@ -319,7 +325,7 @@ footer{
 					</tr>
 					<tr>
 						<td class="col_1"></td>
-						<td class="col_2"><label for="password">密码请为6-16位英文数字</label></td>
+						<td class="col_2 tips"><label for="password">密码请为6-16位英文数字</label></td>
 					</tr>
 					<!--性别-->
 					<tr>
