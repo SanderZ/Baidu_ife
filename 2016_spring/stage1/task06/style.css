@@ -1,0 +1,431 @@
+/*
+=========
+***背景***
+=========
+*/
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #dedede;
+}
+#background{
+	font-size: 12px;
+	width: 980px;
+	height: 1386px;
+	margin: 0 auto;
+	background-color: #fff;
+}
+
+/*
+=========
+***居中***
+=========
+*/
+#main_container{
+	position: relative;
+	width: 892px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+/*
+=========
+***页眉***
+=========
+*/
+header{
+	width: 892px;
+	height:61px;
+	border-bottom: 2px solid #938e8c;
+}
+#header_link,
+#header_date{
+	box-sizing: border-box;
+	height: 100%;
+	padding: 5px;
+	font-family: "黑体";
+}
+#header_link span,
+#header_date span{
+	display: inline-block;
+	margin-top: 39px;
+}
+#header_link{
+	float: left;
+	width: 110px;
+	background-color: #d45d5c;
+	color: #fff;
+}
+#header_date{
+	float: right;
+	color: #d45d5c;
+}
+
+/*
+=========
+***主体***
+=========
+*/
+#row1_container,
+#row2_container{
+	margin-top: 40px;
+}
+
+#row1_container{
+	height: 301px;
+}
+
+/*
+==================
+主体第一行左侧图片
+==================
+*/
+#img_wrapper{
+	position: relative;
+	float: left;
+	width: 641px;
+	height: 301px;
+}
+#row1_container img{
+	width: 100%;
+	height: 100%;
+}
+#left_imgCover,
+#right_imgCover{
+	position: absolute;
+	width: 191px;
+	height: 100%;
+}
+#left_imgCover{
+	left: 0;
+	background: rgba(66,140,89,0.5);
+}
+#right_imgCover{
+	right: 0;
+	background: rgba(204,118,129,0.5);
+}
+
+/*
+==================
+主体第一行右侧文字
+==================
+*/
+#title_wrapper{
+	float: right;
+	width: 203px;
+	height: 100%;
+	border-top: 2px solid #cc8091;
+	font-family: "Microsoft YaHei"
+}
+#title_wrapper p{
+	margin: 0;
+}
+#title{
+	text-decoration: underline;
+	font-size: 24px;
+	font-variant: small-caps;
+	color: #000;
+	margin: 0;
+}
+#subtitle{
+	font-family: "楷体";
+	font-size: 12px;
+	font-style: italic;
+	color: #676767;
+	word-break: break-all;
+}
+#text700{
+	color: #75b86b;
+	font-size: 116px;
+	font-weight: bold;
+}
+#text_css_wrapper{
+	float: left;
+	padding-top: 16px;
+}
+#text3_2,
+#word_css{
+	color: #cc8091;
+	font-size: 21px;
+}
+#text3_2{
+	float: left;
+	font-size: 55px;
+}
+#text_css{
+	color: rgb(35,24,21);
+	opacity: 0.4;
+}
+
+/*
+=========
+主体第二行
+=========
+*/
+#row2_container{
+	height: 168px;
+	width: 641px;
+}
+#row2_container section{
+	float: left;
+	width: 30%;
+	height: 100%;
+	margin-right: 21px;
+}
+#row2_container section h2{
+	font-size: 16px;
+	text-decoration: underline;
+	font-weight: bold;
+	font-family: "Microsoft YaHei";
+	margin: 0;
+}
+#title_what{
+	color: #418c59;
+}
+#title_when{
+	color: #d2994f;
+}
+#title_how{
+	color: #cc7680;
+}
+#row2_container p{
+	color: #767777;
+	font-family: "宋体";
+	line-height: 16px;
+}
+#how_list{
+	font-family: "Microsoft YaHei";
+	opacity: 0.7;
+	color: #231815;
+	list-style: none;
+	padding-left: 5px;
+	line-height: 20px;
+	margin: 20px 0;
+}
+#how_list span{
+	font-style: italic;
+	color: #cd4a48;
+}
+
+/*
+=========
+主体第三行
+=========
+*/
+#row3_container{
+	height: 605px;
+	margin-top: 75px;
+}
+
+/*
+==================
+主体第三行左侧
+==================
+*/
+#col_1{
+	position: relative;
+	float: left;
+	width: 415px;
+	height: 100%;
+}
+#col_1 h2,
+#col_1 h3{
+	font-family: "黑体";
+	font-weight: bold;
+	color: #11456b;
+	word-break: break-all;
+	margin: 0;
+}
+#col_1 h2{
+	font-size: 42px;
+	line-height: 1em;
+	margin-top: 5px;
+}
+#col_1 h2 span{
+	font-size: 72px;
+	color: #f5e327;
+	font-style: italic;
+}
+#col_1 h3{
+	font-size: 33px;
+	padding: 10px 0;
+	border-bottom: 2px solid #11456b;
+}
+#text_qian{
+	float: left;
+	font-size: 70px;
+	color: #f5e327;
+	font-family: "Microsoft YaHei";
+	margin-right: 10px;
+    margin-top: -12px;
+}
+#col_1 p{
+	font-family: "宋体";
+	color: #767777;
+	line-height: 16px;
+	margin: 0;
+}
+.text_indent{
+	text-indent: 2em;
+}
+#col_1 img{
+	float: right;
+	margin: 10px 5px 10px 10px;
+}
+#col_1 section{
+	position: absolute;
+	bottom: 0;
+}
+
+/*
+==================
+主体第三行右侧
+==================
+*/
+#col_2{
+	float: right;
+	width: 459px;
+	height: 100%;
+}
+/*
+====================
+主体第三行右侧上半部分
+====================
+*/
+#col2_upper{
+	position: relative;
+	height: 258px;
+}
+#col2_upper img{
+	width: 100%;
+	height: 100%;
+}
+#col2_img_cover{
+	position: absolute;
+	bottom: 0;
+	height: 61px;
+	width: 100%;
+	background-color: rgba(4, 0, 0, 0.4);
+}
+#col2_img_cover h3{
+	height: 44px;
+	line-height: 44px;
+	margin: 8.5px 30px;
+	font-family: "Microsoft YaHei";
+	color: #72b16a;
+	font-style: italic;
+	border-left: 3px solid #72b16a;
+}
+#col2_img_cover h3 span{
+	font-style: normal;
+	color: #fff;
+	font-size: 26px;
+	margin: 0 10px;
+}
+/*
+====================
+主体第三行右侧下半部分
+====================
+*/
+#col2_lower{
+	position: relative;
+	height: 318px;
+	margin-top: 29px;
+	background-color: #eeedd6;
+	color: #5a5b5b;
+}
+#col2_lower_row1{
+	font-size: 16px;
+	line-height: 2.5em;
+	padding-top: 16px;
+}
+#col2_lower_row1 span{
+	font-size: 12px;
+	font-style: italic;
+}
+#col2_lower_row2{
+	height: 160px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+#col2_lower_corner{
+	box-sizing: border-box;
+	float: left;
+	height: 100%;
+	width: 260px;
+	background-color: #d45d5c;
+	padding: 10px;
+	color: #fff;
+}
+#col2_lower_p{
+	position: relative;
+	float: right;
+	height: 100%;
+	width: 199px;
+	margin: 0;
+	box-sizing: border-box;
+	padding: 15px;
+	text-indent: 3em;
+	font-size: 14px;
+	font-family: "黑体";
+	font-style: italic;
+}
+#quot_mark_left,
+#quot_mark_right{
+	position: absolute;
+	font-size: 72px;
+	font-style: normal;
+	color: #d45d5c;
+}
+#quot_mark_left{
+	left: -65px;
+    top: -5px;
+}
+#quot_mark_right{
+	left: 105px;
+	bottom: -18px;
+}
+#text_zero{
+	float: left;
+	font-size: 110px;
+	height: 140px;
+	line-height: 140px;
+	font-family: "Microsoft YaHei";
+	margin-right: 5px;
+}
+#text_beside_zero{
+	float: left;
+	height: 86px;
+	font-family: "黑体";
+	margin: 25px 0;
+	padding: 5px;
+	border-left: 2px solid #fff;
+}
+#text_beside_zero p{
+	margin: 0;
+}
+#numbers{
+	font-size: 21px;
+	font-style: italic;
+}
+
+/*
+==========
+***页脚***
+==========
+*/
+footer{
+	position: absolute;
+	bottom: 0;
+	width: 892px;
+	height:61px;
+	border-top: 1px solid #938e8c;
+}
+#footer_link{
+	height: 100%;
+	font-family: "黑体";
+	display: inline-block;
+	float: right;
+	color: #d45d5c;
+}
