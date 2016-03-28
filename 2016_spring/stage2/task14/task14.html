@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IFE JavaScript Task 01</title>
+  </head>
+<body>
+
+  <h3>污染城市列表</h3>
+  <ul id="aqi-list">
+<!--   
+    <li>第一名：福州（样例），10</li>
+  	<li>第二名：福州（样例），10</li> -->
+  </ul>
+
+<script type="text/javascript">
+
+var aqiData = [
+  ["北京", 90],
+  ["上海", 50],
+  ["福州", 10],
+  ["广州", 50],
+  ["成都", 90],
+  ["西安", 100]
+];
+
+(function () {
+
+  /*
+  在注释下方编写代码
+  遍历读取aqiData中各个城市的数据
+  将空气质量指数大于60的城市显示到aqi-list的列表中
+  */
+  var list = document.getElementById("aqi-list");
+  var result = [];
+  //筛选大于60的结果
+  for(var i = 0; i < aqiData.length; i++){
+    if(aqiData[i][1] > 60){
+      result.push(aqiData[i]);
+    }
+  }
+  //降序排序
+  result.sort(function(a,b){return b[1] - a[1];});
+  //添加li元素
+  for(var i = 0; i < result.length; i++){
+    var li = document.createElement("li");
+    li.innerHTML = "第" + numToChar(i + 1) + "名" + result[i][0] + "," + result[i][1];
+    list.appendChild(li);
+  }
+
+  function numToChar(num) {
+  switch(num){
+    case 0: return "零";break;
+    case 1: return "一";break;
+    case 2: return "二";break;
+    case 3: return "三";break;
+    case 4: return "四";break;
+    case 5: return "五";break;
+    case 6: return "六";break;
+    case 7: return "七";break;
+    case 8: return "八";break;
+    case 9: return "九";break;
+  }
+}
+
+})();
+
+</script>
+</body>
+</html>
