@@ -1,0 +1,104 @@
+/*
+============
+清除默认样式
+============
+*/
+body{
+	margin: 0;
+	padding: 0;
+}
+
+/*
+==========
+网格的容器
+==========
+*/
+.grid-container{
+	width: 100%;
+	padding: 10px;
+}
+
+/*
+=======================
+清除浮动，避免行之间影响
+=======================
+*/
+.grid-row:before,
+.grid-row:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.grid-row:after{
+	zoom:1;
+}
+
+/*
+=========================
+使各列保持在各自所属的行中
+=========================
+*/
+[class*=" col-"]{
+	float: left;
+	padding: 0 10px;
+	margin: 10px 0;
+	min-height: 1px;
+}
+
+/*
+===========================
+窗口宽度小于768px时各列的宽度
+===========================
+*/
+.col-s-1{ width: 8.333333%; }
+.col-s-2{ width: 16.666667%; }
+.col-s-3{ width: 25%; }
+.col-s-4{ width: 33.333333%; }
+.col-s-5{ width: 41.666667%; }
+.col-s-6{ width: 50%; }
+.col-s-7{ width: 58.333333%; }
+.col-s-8{ width: 66.666667%; }
+.col-s-9{ width: 75%; }
+.col-s-10{ width: 83.333333%; }
+.col-s-11{ width: 91.666667%; }
+.col-s-12{ width: 100%; }
+
+/*
+===========================
+窗口宽度大于768px时各列的宽度
+===========================
+*/
+@media all and (min-width: 768px) {
+	.col-m-1{ width: 8.333333%; }
+	.col-m-2{ width: 16.666667%; }
+	.col-m-3{ width: 25%; }
+	.col-m-4{ width: 33.333333%; }
+	.col-m-5{ width: 41.666667%; }
+	.col-m-6{ width: 50%; }
+	.col-m-7{ width: 58.333333%; }
+	.col-m-8{ width: 66.666667%; }
+	.col-m-9{ width: 75%; }
+	.col-m-10{ width: 83.333333%; }
+	.col-m-11{ width: 91.666667%; }
+	.col-m-12{ width: 100%; }
+}
+
+/*
+===================
+为内容设置底色等样式
+===================
+*/
+.content-wrapper{
+	background-color: #eee;
+	border: 1px solid #999;
+	height: 50px;
+}
+
+/*
+=======================
+为所有元素应用border-box
+=======================
+*/
+*{
+	box-sizing: border-box;
+}
