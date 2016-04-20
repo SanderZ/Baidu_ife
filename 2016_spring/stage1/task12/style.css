@@ -1,0 +1,66 @@
+/*
+=====
+表格
+=====
+*/
+tr{
+	text-align: left;
+}
+/*奇数行*/
+tr:nth-child(2n+1){
+	background-color: #dedede;
+}
+/*前四行*/
+tr:nth-child(-n+4){
+	color: #f00;
+}
+/*字段名*/
+th{
+	color: #fff;
+	background-color: #000;
+}
+
+/*
+==========
+文本输入框
+==========
+*/
+#text-box{
+	margin: 20px 0;
+	width: 200px;
+	transition: 0.5s width;
+}
+#text-box:focus{
+	width: 300px;
+}
+
+/*
+====
+轮播
+====
+*/
+.slider{
+	position: relative;
+	width: 300px;
+	height: 200px;
+	background-color: #dedede;
+	overflow: hidden;
+}
+.slider-content{
+	list-style: none;
+}
+.slider-btn{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	list-style: none;
+	margin: 0;
+}
+.slider-btn li{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.3);
+}
